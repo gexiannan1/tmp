@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdio>
+#include <string.h>
+using namespace std;
+void g(char * s1, char *s2)
+{
+  const  char* p = strcat(s1 ,s2) ;
+ printf("%s\n", p);
+  return;
+}
+int main()
+{
+  char str[100] = "gexian";
+  memset(str,0x00,sizeof(str));
+    g(str,"nan");
+  return 0;
+}
